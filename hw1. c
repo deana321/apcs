@@ -1,0 +1,54 @@
+// 輸入三個整數 a、b、c，印出此三數的最大值、最小值、總和及平均值
+
+#include <stdio.h>
+
+int main() {
+
+int a,b,c,x,y,z,i;
+
+//最大
+
+printf("inputa=");
+scanf("%d",&a);
+printf("inputb=") ;
+scanf("%d",&b);
+printf("inputc=") ;
+scanf("%d",&c);
+
+if(a >b &&a > c)
+{
+    x = a;
+}
+else if(b >a &&b > c)
+{
+    x = b;
+}
+else if(c >b &&c > a)
+{
+    x = c;
+}
+printf("\nMax=%d", x);
+
+//最小
+
+if(a <b &&a < c)
+{
+    y = a;
+}
+else if(b <a &&b < c)
+{
+    y = b;
+}
+else if(c <b &&c < a)
+{
+    y = c;
+}
+printf("\nMin=%d", y);
+
+//總和
+z=a+b+c;
+printf("\n%d + %d + %d= %d", a, b, c, z);
+
+//平均
+i=z/3;
+printf("\n%d /3= %d", z, i);
