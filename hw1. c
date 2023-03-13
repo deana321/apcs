@@ -52,3 +52,6 @@ printf("\n%d + %d + %d= %d", a, b, c, z);
 //平均
 i=z/3;
 printf("\n%d /3= %d", z, i);
+
+ return 0;
+}
